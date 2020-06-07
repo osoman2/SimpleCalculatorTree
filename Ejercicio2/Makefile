@@ -9,7 +9,7 @@ lex.yy.c: calc.l
 calc: lex.yy.c y.tab.c
 	gcc -o calc lex.yy.c y.tab.c
 run: 
-	./calc < test.txt
+	./calc 
 
 clean:
 	rm calc lex.yy.c y.tab.c y.tab.h
